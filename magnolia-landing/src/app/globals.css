@@ -14,3 +14,46 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+.typo-body-small,
+.typo-action,
+.typo-body,
+.typo-heading,
+.typo-title {
+  font-family: var(--font-manrope), sans-serif;
+}
+
+.typo-body-small {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+}
+
+.typo-action {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+}
+
+.typo-body {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+}
+
+.typo-heading {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+}
+
+.typo-title {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: -0.04em;
+}
