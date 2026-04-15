@@ -15,9 +15,36 @@ const manrope = Manrope({
 	display: "swap",
 });
 
+const siteUrl = "https://www.irisvideo.app";
+
 export const metadata: Metadata = {
 	title: "Iris Waitlist",
 	description: "Be the first to experience the future of content creation.",
+	metadataBase: new URL(siteUrl),
+	openGraph: {
+		title: "Iris Waitlist",
+		description:
+			"Be the first to experience the future of content creation.",
+		url: siteUrl,
+		siteName: "Iris",
+		images: [
+			{
+				url: "/og-image.png",
+				width: 1200,
+				height: 630,
+				alt: "Iris — The future of content creation",
+			},
+		],
+		locale: "en_US",
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Iris Waitlist",
+		description:
+			"Be the first to experience the future of content creation.",
+		images: ["/og-image.png"],
+	},
 };
 
 export default function RootLayout({
